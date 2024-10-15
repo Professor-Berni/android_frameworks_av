@@ -55,7 +55,7 @@ cc_binary {
         "-Wno-unused-parameter",
     ],
 
-    init_rc: ["cameraserver.rc"],
+//    init_rc: ["cameraserver.rc"],
 
     vintf_fragments: [
         "manifest_android.frameworks.cameraservice.service@2.2.xml",
