@@ -909,6 +909,10 @@ status_t AudioSystem::AudioFlingerClient::removeSupportedLatencyModesCallback(
     gDynPolicyCallback = cb;
 }
 
+/* static */ void AudioSystem::setErrorCallback(audio_error_callback cb) {
+    AudioSystem::addErrorCallback(cb);
+}
+
 /*static*/ void AudioSystem::setRecordConfigCallback(record_config_callback cb) {
     std::lock_guard _l(gMutex);
     gRecordConfigCallback = cb;

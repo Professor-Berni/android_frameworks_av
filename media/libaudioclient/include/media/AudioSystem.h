@@ -173,6 +173,7 @@ public:
     // Returns a token that can be used for un-registering.
     // Might block while callbacks are being invoked.
     static uintptr_t addErrorCallback(audio_error_callback cb);
+    static void setErrorCallback(audio_error_callback cb);
 
     // Un-registers a callback previously added with addErrorCallback.
     // Might block while callbacks are being invoked.
